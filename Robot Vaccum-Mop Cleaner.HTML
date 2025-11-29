@@ -567,8 +567,8 @@ modal.addEventListener('click',e=>{if(e.target===modal)modalClose.click()});
    ✨ Gemini API 集成逻辑
    ========================================= */
 
-const apiKey = "AIzaSyAnH6cqseIJAby37X0NzyHZMh1Wleyd-VQ"; // API Key 将由系统自动注入
-
+//const apiKey = "AIzaSyAnH6cqseIJAby37X0NzyHZMh1Wleyd-VQ"; // API Key 将由系统自动注入
+const apiKey = "sk-9930648b2d5d40a78f2741eecff52b89"; // API Key 将由系统自动注入
 // 通用 API 调用函数
 async function callGeminiAPI(userPrompt, systemInstruction) {
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
@@ -646,4 +646,5 @@ async function diagnoseIssue() {
 
 </script>
 </body>
+
 </html>
